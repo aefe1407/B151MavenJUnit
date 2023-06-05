@@ -28,7 +28,7 @@ public class C03_BeforeAfter {
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown()  {
         driver.close();
     }
 
