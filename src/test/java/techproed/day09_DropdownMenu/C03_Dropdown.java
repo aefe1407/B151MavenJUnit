@@ -44,8 +44,9 @@ public class C03_Dropdown {
         //Seçeneklerden 4 tane seçtiğimizi doğrulayalım
         Assert.assertEquals(4,select.getAllSelectedOptions().size());
 
-        //Seçtiğimiz seçeneklerden ilkini yazdıralım, ilk seçeneğin Java olduğunu doğrulayalım
         System.out.println("**********************************************");
+        //Seçtiğimiz seçeneklerden ilkini yazdıralım, ilk seçeneğin Java olduğunu doğrulayalım
+
         System.out.println("Seçilen seçeneklerden ilki : "+select.getFirstSelectedOption().getText());
         Assert.assertEquals("Java",select.getFirstSelectedOption().getText());
         bekle(3);

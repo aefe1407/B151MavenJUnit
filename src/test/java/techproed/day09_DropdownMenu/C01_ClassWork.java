@@ -37,6 +37,7 @@ public class C01_ClassWork {
         String expectedTitle = "Amazon";
         Assert.assertTrue(actualTitle.contains(expectedTitle));
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("iphone", Keys.ENTER);
+        driver.findElement(By.id("twotabsearchtextbox")).clear();
 
     }
 
@@ -46,6 +47,8 @@ public class C01_ClassWork {
         WebElement image = driver.findElement(By.id("nav-logo-sprites"));
         Assert.assertTrue(image.isDisplayed());
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("samsung", Keys.ENTER);
+        driver.findElement(By.id("twotabsearchtextbox")).clear();
+
     }
 
     @Test
@@ -54,6 +57,8 @@ public class C01_ClassWork {
         WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
         Assert.assertTrue(searchBox.isEnabled());
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("nokia", Keys.ENTER);
+        driver.findElement(By.id("twotabsearchtextbox")).clear();
+
     }
 
     @Test
